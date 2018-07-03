@@ -12,6 +12,9 @@
 		A992EDAE20EAC4560095BEB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A992EDAC20EAC4560095BEB9 /* Main.storyboard */; };
 		A992EDB020EAC4590095BEB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A992EDAF20EAC4590095BEB9 /* Assets.xcassets */; };
 		A992EDB320EAC4590095BEB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A992EDB120EAC4590095BEB9 /* LaunchScreen.storyboard */; };
+		A992EDBE20EBE3F90095BEB9 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDBD20EBE3F90095BEB9 /* RoundButton.swift */; };
+		A992EDC020EBE5FA0095BEB9 /* ImageViewRtx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDBF20EBE5FA0095BEB9 /* ImageViewRtx.swift */; };
+		A992EDC220EBE68A0095BEB9 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDC120EBE68A0095BEB9 /* ParkingSpot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		A992EDAF20EAC4590095BEB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A992EDB220EAC4590095BEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A992EDB420EAC4590095BEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A992EDBD20EBE3F90095BEB9 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		A992EDBF20EBE5FA0095BEB9 /* ImageViewRtx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewRtx.swift; sourceTree = "<group>"; };
+		A992EDC120EBE68A0095BEB9 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		A992EDA720EAC4560095BEB9 /* Park.ly */ = {
 			isa = PBXGroup;
 			children = (
+				A992EDBC20EB44D80095BEB9 /* Controller */,
+				A992EDBB20EB44CD0095BEB9 /* View */,
+				A992EDBA20EB44C30095BEB9 /* Model */,
 				A992EDA820EAC4560095BEB9 /* AppDelegate.swift */,
 				A992EDAA20EAC4560095BEB9 /* ViewController.swift */,
 				A992EDAC20EAC4560095BEB9 /* Main.storyboard */,
@@ -62,6 +71,30 @@
 				A992EDB420EAC4590095BEB9 /* Info.plist */,
 			);
 			path = Park.ly;
+			sourceTree = "<group>";
+		};
+		A992EDBA20EB44C30095BEB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A992EDC120EBE68A0095BEB9 /* ParkingSpot.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A992EDBB20EB44CD0095BEB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A992EDBD20EBE3F90095BEB9 /* RoundButton.swift */,
+				A992EDBF20EBE5FA0095BEB9 /* ImageViewRtx.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A992EDBC20EB44D80095BEB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A992EDBE20EBE3F90095BEB9 /* RoundButton.swift in Sources */,
+				A992EDC020EBE5FA0095BEB9 /* ImageViewRtx.swift in Sources */,
 				A992EDAB20EAC4560095BEB9 /* ViewController.swift in Sources */,
+				A992EDC220EBE68A0095BEB9 /* ParkingSpot.swift in Sources */,
 				A992EDA920EAC4560095BEB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
