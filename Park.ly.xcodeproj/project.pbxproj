@@ -15,6 +15,7 @@
 		A992EDBE20EBE3F90095BEB9 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDBD20EBE3F90095BEB9 /* RoundButton.swift */; };
 		A992EDC020EBE5FA0095BEB9 /* ImageViewRtx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDBF20EBE5FA0095BEB9 /* ImageViewRtx.swift */; };
 		A992EDC220EBE68A0095BEB9 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDC120EBE68A0095BEB9 /* ParkingSpot.swift */; };
+		A992EDC520ECE1470095BEB9 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDC420ECE1470095BEB9 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A992EDBD20EBE3F90095BEB9 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		A992EDBF20EBE5FA0095BEB9 /* ImageViewRtx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewRtx.swift; sourceTree = "<group>"; };
 		A992EDC120EBE68A0095BEB9 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
+		A992EDC420ECE1470095BEB9 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		A992EDA720EAC4560095BEB9 /* Park.ly */ = {
 			isa = PBXGroup;
 			children = (
+				A992EDC320ECE1260095BEB9 /* Service */,
 				A992EDBC20EB44D80095BEB9 /* Controller */,
 				A992EDBB20EB44CD0095BEB9 /* View */,
 				A992EDBA20EB44C30095BEB9 /* Model */,
@@ -95,6 +98,14 @@
 			children = (
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A992EDC320ECE1260095BEB9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A992EDC420ECE1470095BEB9 /* LocationService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				A992EDC020EBE5FA0095BEB9 /* ImageViewRtx.swift in Sources */,
 				A992EDAB20EAC4560095BEB9 /* ViewController.swift in Sources */,
 				A992EDC220EBE68A0095BEB9 /* ParkingSpot.swift in Sources */,
+				A992EDC520ECE1470095BEB9 /* LocationService.swift in Sources */,
 				A992EDA920EAC4560095BEB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
