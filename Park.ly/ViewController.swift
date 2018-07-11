@@ -29,6 +29,7 @@ class ViewController: UIViewController {
   
     @IBAction func parkBtnWasPressed(_ sender: Any) {
         if maoView.annotations.count == 1 {
+            maoView.addAnnotation(parkedCarAnnotation!)
             parkBtn.setImage(UIImage(named: "foundCar.png"), for: .normal)
         } else {
             maoView.removeAnnotations(maoView.annotations)
@@ -60,7 +61,7 @@ class ViewController: UIViewController {
 extension ViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if let annotation = annotation as? ParkingSpot {
-        let identifier = "pin"
+            let identifier = "pin"
             var view: MKPinAnnotationView
             view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             view.canShowCallout = true
@@ -79,14 +80,14 @@ extension ViewController: MKMapViewDelegate {
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
         location.mapItem(location: (parkedCarAnnotation?.coordinate)!).openInMaps(launchOptions: launchOptions)
     }
-    
 }
 
-extension ViewController: CLLocationManagerDelegate{
+extension ViewController: CLLocationManagerDelegate {
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         centerMapOnLocation(location: CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude))
+        
         let locationServiceCoordinate = LocationService.instance.locationManager.location!.coordinate
         
-        parkedCarAnnotation = ParkingSpot(title: "My Parking Spot", locationName: "Tap i for GPS", coordinate: CLLocationCoordinate2D(latitude: locationServiceCoordinate.latitude, longitude: locationServiceCoordinate.longitude))
+        parkedCarAnnotation = ParkingSpot(title: "My Parking Spot", locationName: "Tap the 'i' for GPS", coordinate: CLLocationCoordinate2D(latitude: locationServiceCoordinate.latitude , longitude: locationServiceCoordinate.longitude))
     }
 }

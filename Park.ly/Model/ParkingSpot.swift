@@ -28,10 +28,12 @@ class ParkingSpot: NSObject, MKAnnotation {
     
     
     func mapItem(location: CLLocationCoordinate2D) -> MKMapItem {
-        let addressDictionary = [String(CNPostalAddressStreetKey) : subtitle]
+        let addressDictionary = [String(CNPostalAddressStreetKey): subtitle]
         let placemark = MKPlacemark(coordinate: location, addressDictionary: addressDictionary)
+        
         let mapItem = MKMapItem(placemark: placemark)
         mapItem.name = title
+        
         return mapItem
     }
 }

@@ -16,9 +16,11 @@
 		A992EDC020EBE5FA0095BEB9 /* ImageViewRtx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDBF20EBE5FA0095BEB9 /* ImageViewRtx.swift */; };
 		A992EDC220EBE68A0095BEB9 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDC120EBE68A0095BEB9 /* ParkingSpot.swift */; };
 		A992EDC520ECE1470095BEB9 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDC420ECE1470095BEB9 /* LocationService.swift */; };
+		FFA22AAA09296CE6932E71B6 /* Pods_Park_ly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC77B119701D9DB492713E94 /* Pods_Park_ly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C87DCC1FA8431D4BBA39FDE /* Pods-Park.ly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Park.ly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Park.ly/Pods-Park.ly.release.xcconfig"; sourceTree = "<group>"; };
 		A992EDA520EAC4560095BEB9 /* Park.ly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Park.ly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A992EDA820EAC4560095BEB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A992EDAA20EAC4560095BEB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		A992EDBF20EBE5FA0095BEB9 /* ImageViewRtx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewRtx.swift; sourceTree = "<group>"; };
 		A992EDC120EBE68A0095BEB9 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
 		A992EDC420ECE1470095BEB9 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		AAC2BD6E8C629D271755F891 /* Pods-Park.ly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Park.ly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Park.ly/Pods-Park.ly.debug.xcconfig"; sourceTree = "<group>"; };
+		AC77B119701D9DB492713E94 /* Pods_Park_ly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Park_ly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFA22AAA09296CE6932E71B6 /* Pods_Park_ly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				A992EDA720EAC4560095BEB9 /* Park.ly */,
 				A992EDA620EAC4560095BEB9 /* Products */,
+				ED97F62C29DCA854A3B73F6E /* Pods */,
+				DCE52AF71E72B03BADCF22C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +115,23 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		DCE52AF71E72B03BADCF22C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC77B119701D9DB492713E94 /* Pods_Park_ly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED97F62C29DCA854A3B73F6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAC2BD6E8C629D271755F891 /* Pods-Park.ly.debug.xcconfig */,
+				3C87DCC1FA8431D4BBA39FDE /* Pods-Park.ly.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A992EDB720EAC4590095BEB9 /* Build configuration list for PBXNativeTarget "Park.ly" */;
 			buildPhases = (
+				A6B34EEBFE4FA41F29713496 /* [CP] Check Pods Manifest.lock */,
 				A992EDA120EAC4560095BEB9 /* Sources */,
 				A992EDA220EAC4560095BEB9 /* Frameworks */,
 				A992EDA320EAC4560095BEB9 /* Resources */,
+				CFE1563048441167C59B93C9 /* [CP] Embed Pods Frameworks */,
+				75D009AAC58A1804C5C3FED6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +200,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75D009AAC58A1804C5C3FED6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Park.ly/Pods-Park.ly-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Park.ly/Pods-Park.ly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B34EEBFE4FA41F29713496 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Park.ly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFE1563048441167C59B93C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Park.ly/Pods-Park.ly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A992EDA120EAC4560095BEB9 /* Sources */ = {
@@ -326,15 +409,13 @@
 		};
 		A992EDB820EAC4590095BEB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC2BD6E8C629D271755F891 /* Pods-Park.ly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UBDP9T662;
 				INFOPLIST_FILE = Park.ly/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KKi.Park-ly";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -344,15 +425,13 @@
 		};
 		A992EDB920EAC4590095BEB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C87DCC1FA8431D4BBA39FDE /* Pods-Park.ly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UBDP9T662;
 				INFOPLIST_FILE = Park.ly/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KKi.Park-ly";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
