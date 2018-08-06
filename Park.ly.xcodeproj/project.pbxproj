@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A97658772118D4C400631F5B /* GoogleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97658762118D4C400631F5B /* GoogleVC.swift */; };
 		A992EDA920EAC4560095BEB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDA820EAC4560095BEB9 /* AppDelegate.swift */; };
 		A992EDAB20EAC4560095BEB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992EDAA20EAC4560095BEB9 /* ViewController.swift */; };
 		A992EDAE20EAC4560095BEB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A992EDAC20EAC4560095BEB9 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		3C87DCC1FA8431D4BBA39FDE /* Pods-Park.ly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Park.ly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Park.ly/Pods-Park.ly.release.xcconfig"; sourceTree = "<group>"; };
+		A97658762118D4C400631F5B /* GoogleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVC.swift; sourceTree = "<group>"; };
 		A992EDA520EAC4560095BEB9 /* Park.ly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Park.ly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A992EDA820EAC4560095BEB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A992EDAA20EAC4560095BEB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +76,6 @@
 				A992EDBB20EB44CD0095BEB9 /* View */,
 				A992EDBA20EB44C30095BEB9 /* Model */,
 				A992EDA820EAC4560095BEB9 /* AppDelegate.swift */,
-				A992EDAA20EAC4560095BEB9 /* ViewController.swift */,
 				A992EDAC20EAC4560095BEB9 /* Main.storyboard */,
 				A992EDAF20EAC4590095BEB9 /* Assets.xcassets */,
 				A992EDB120EAC4590095BEB9 /* LaunchScreen.storyboard */,
@@ -103,6 +104,8 @@
 		A992EDBC20EB44D80095BEB9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A992EDAA20EAC4560095BEB9 /* ViewController.swift */,
+				A97658762118D4C400631F5B /* GoogleVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				A992EDAB20EAC4560095BEB9 /* ViewController.swift in Sources */,
 				A992EDC220EBE68A0095BEB9 /* ParkingSpot.swift in Sources */,
 				A992EDC520ECE1470095BEB9 /* LocationService.swift in Sources */,
+				A97658772118D4C400631F5B /* GoogleVC.swift in Sources */,
 				A992EDA920EAC4560095BEB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +419,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UBDP9T662;
 				INFOPLIST_FILE = Park.ly/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "KKi.Park-ly";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -431,7 +438,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UBDP9T662;
 				INFOPLIST_FILE = Park.ly/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "KKi.Park-ly";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
